@@ -30,5 +30,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/ahmedyar123/Ecommerce-Website.git",
+  "author": "ahmedyar123 <ahmeda.abbasi99@gmail.com>",
+  "license": "MIT"
 }
