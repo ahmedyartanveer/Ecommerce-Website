@@ -8,8 +8,8 @@ export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product;
     return (
-      <ProductWrapper classname="col-9 mx-auto col-md-6 col-lg-3 my-3">
-        <div className="card">
+      <ProductWrapper classname="">
+        <div className="card col-md-9 mx-auto my-2">
           <div
             className="img-container p-5"
             onClick={() => console.log("you clicked me on the image container")}
@@ -37,7 +37,7 @@ export default class Product extends Component {
           <div className="card-footer d-flex justify-content-center">
             <p className="align-self-center mb-0">{title}</p>
             <h5 className="text-blue font-italic mb-0">
-              <span className="mr-1">$</span>
+              <span className="ml-3">$</span>
               {price}
             </h5>
           </div>
@@ -69,7 +69,7 @@ const ProductWrapper = styled.div`
   }
   &:hover {
     .card {
-      border: 0.4rem solid rgba(0, 0, 0, 0.2);
+      border: 0.04rem solid rgba(0, 0, 0, 0.2);
       box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
     }
     .card-footer {
@@ -97,12 +97,12 @@ const ProductWrapper = styled.div`
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);
   }
-  .card-btn:hover {
+  .cart-btn:hover {
     color: var(--mainBlue);
     cursor: pointer;
   }
