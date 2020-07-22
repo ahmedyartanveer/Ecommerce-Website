@@ -21,7 +21,7 @@ export default class Modal extends Component {
                   <div className="row">
                     <div
                       id="modal"
-                      className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize"
+                      className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize rounded"
                     >
                       <h5>Item added to the cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
@@ -32,7 +32,6 @@ export default class Modal extends Component {
                           Store
                         </ButtonContainer>
                       </Link>
-                      <br />
                       <Link to="/cart">
                         <ButtonContainer cart onClick={() => closeModal()}>
                           go to cart
