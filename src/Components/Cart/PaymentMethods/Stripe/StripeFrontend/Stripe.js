@@ -34,7 +34,6 @@ export default class stripe extends React.Component {
   render() {
     const { total } = this.props;
     return (
-      // ...
       <StripeCheckout
         token={this.onToken}
         stripeKey={process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}
