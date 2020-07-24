@@ -10,11 +10,11 @@ export default class stripe extends React.Component {
     };
 
     const headers = {
-      "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
     };
 
-    fetch("http://localhost:8282/payment", {
+    fetch("https://localhost:8282/payment", {
       method: "POST",
       headers,
       body: JSON.stringify(body),
