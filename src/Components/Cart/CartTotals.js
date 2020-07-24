@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PayPalButton from "./Paypal";
+import PayPalButton from "./PaymentMethods/Paypal/Paypal";
+import Stripe from "./PaymentMethods/Stripe/StripeFrontend/Stripe";
 
 export default function CartTotals({ value, history }) {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
@@ -34,6 +35,13 @@ export default function CartTotals({ value, history }) {
               </span>
             </h5>
             <PayPalButton
+              total={cartTotal}
+              clearCart={clearCart}
+              history={history}
+            />
+            <br />
+            <Stripe
+              products={value.cart}
               total={cartTotal}
               clearCart={clearCart}
               history={history}

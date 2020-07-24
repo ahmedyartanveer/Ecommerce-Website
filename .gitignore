@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-.env.development
+.env
+src\Components\Cart\PaymentMethods\Stripe\StripeBackend\node_modules
+
 # testing
 /coverage
 
