@@ -10,13 +10,15 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
     "env": "^0.0.2",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "react-stripe-checkout": "^2.6.3",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "websocket-extensions": "^0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
